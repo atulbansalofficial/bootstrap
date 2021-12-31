@@ -13,19 +13,19 @@
         crossorigin="anonymous"></script> -->
     <style>
         body {
-            /* Default Screen */
-
-            background-color: rgb(175, 167, 167);
+            /* Default  mobile Screen */
+            background-color: red;
 
         }
 
         .a {
-            visibility: visible;
+            visibility: hidden;
         }
 
         .b {
-            visibility: hidden;
+            visibility: visible;
         }
+
 
         .c {
             visibility: hidden;
@@ -39,95 +39,15 @@
             visibility: hidden;
         }
 
-        /* Mobile phones */
-        @media only screen and (max-width: 600px) {
+
+        /* large devices (any device 600px and above) */
+        @media only screen and (min-width: 600px) {
             body {
-                background-color: red;
+                background-color: rgb(175, 167, 167);
             }
 
             .a {
-                visibility: hidden;
-            }
-
-            .b {
                 visibility: visible;
-            }
-
-            .c {
-                visibility: hidden;
-            }
-
-            .d {
-                visibility: hidden;
-            }
-
-            .e {
-                visibility: hidden;
-            }
-        }
-
-        /* tablets */
-        @media only screen and (min-width: 768px) {
-            body {
-                background-color: rgb(179, 24, 166);
-            }
-
-            .a {
-                visibility: hidden;
-            }
-
-            .b {
-                visibility: hidden;
-            }
-
-            .c {
-                visibility: visible;
-            }
-
-            .d {
-                visibility: hidden;
-            }
-
-            .e {
-                visibility: hidden;
-            }
-        }
-
-        /* desktops */
-        @media only screen and (min-width: 992px) {
-            body {
-                background-color: rgb(49, 202, 10);
-            }
-
-            .a {
-                visibility: hidden;
-            }
-
-            .b {
-                visibility: hidden;
-            }
-
-            .c {
-                visibility: hidden;
-            }
-
-            .d {
-                visibility: visible;
-            }
-
-            .e {
-                visibility: hidden;
-            }
-        }
-
-        /* large desktops */
-        @media only screen and (min-width:1200px) {
-            body {
-                background-color: rgb(0, 255, 255);
-            }
-
-            .a {
-                visibility: hidden;
             }
 
             .b {
@@ -143,17 +63,10 @@
             }
 
             .e {
-                visibility: visible;
+                visibility: hidden;
             }
-        }
 
-        /* landscape mode */
-        @media only screen and (max-width: 600px)and (orientation: landscape) {
-            body {
-                margin: 5px;
-                color: aliceblue;
-                background-color: rgb(15, 15, 47);
-            }
+
         }
     </style>
 </head>
@@ -207,7 +120,7 @@
 
 
 
-    
+
 </body>
 
 </html>
